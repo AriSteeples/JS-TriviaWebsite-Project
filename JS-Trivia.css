@@ -1,0 +1,29 @@
+.h1   {
+    text-align: center;
+
+}
+
+/*
+need to be worked on more to fit in the same row per div
+also need to be resized on screen to fit
+*/
+.button {
+    background-color:;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 8px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
+
+
+  /*
+  to disable when the button has been clicked and answered
+  */
+  .disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
