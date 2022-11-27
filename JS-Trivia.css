@@ -8,7 +8,7 @@ need to be worked on more to fit in the same row per div
 also need to be resized on screen to fit
 */
 .button {
-    background-color:;
+    background-color: none;
     border: none;
     color: white;
     text-align: center;
