@@ -7,23 +7,23 @@
 need to be worked on more to fit in the same row per div
 also need to be resized on screen to fit
 */
-.button {
+button {
     background-color: red;
     border: none;
     color: black;
     text-align: center;
     display: inline-block;
     font-size: 8px;
-    margin: 10px 10px;
+    margin: auto;
     cursor: pointer;
   }
 
 
   /*
   to disable when the button has been clicked and answered
-  */
+  
   .disabled {
     opacity: 0.6;
     cursor: not-allowed;
   }
-
+*/
