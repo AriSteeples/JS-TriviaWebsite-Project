@@ -8,9 +8,9 @@ need to be worked on more to fit in the same row per div
 also need to be resized on screen to fit
 */
 .button {
-    background-color: none;
+    background-color: red;
     border: none;
-    color: white;
+    color: black;
     text-align: center;
     display: inline-block;
     font-size: 8px;
