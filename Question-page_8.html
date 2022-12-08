@@ -18,28 +18,19 @@
         <h id="error">Welcome to the Question page</h>
         
             
-        <p> Assassins Creed. What game in the series took place in Egypt?</p>
+        <p> Is this game a PS4 exclusive: True or False. Last of Us.</p>
         <br>
         </div>
         <div class="form-check">
 
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="a"> Assassins Creed Black Flag
+                <input type="radio" class="text-center" name="optradio" id="a"> True
             <br>
             <br>
             <br>
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="b"> Assassins Creed Odyssey
+                <input type="radio" class="text-center" name="optradio" id="b"> False
             <br>
-            <br>
-            <br>
-            <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="c"> Assassins Creed Origins
-            <br>
-            <br>
-            <br>
-            <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="c"> Assassins Creed Valhalla
             <br>
             <br>
             <br>
@@ -62,16 +53,6 @@
                     = document.getElementById("b").value   
                     + "this was not the right answer";     
             }   
-            else if(document.getElementById('c').checked) {   
-                document.getElementById("disp").innerHTML   
-                    = document.getElementById("c").value   
-                    + "this was the right answer";     
-            }   
-            else if(document.getElementById('d').checked) {   
-                document.getElementById("disp").innerHTML   
-                    = document.getElementById("d").value   
-                    + "this was not the right answer";     
-            }  
             else {   
                 document.getElementById("error").innerHTML   
                     = "You have not selected any season";   
