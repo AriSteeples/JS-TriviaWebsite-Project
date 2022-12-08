@@ -39,7 +39,7 @@
             <br>
             <br>
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="c"> Assassins Creed Valhalla
+                <input type="radio" class="text-center" name="optradio" id="d"> Assassins Creed Valhalla
             <br>
             <br>
             <br>
@@ -53,8 +53,9 @@
       <script scr="JS-Trivia-QuestionPage.js">
         function checkButton() {    
             if(document.getElementById('a').checked) {   
-                document.getElementById("disp").innerHTML  
-                    = "this was not the right answer";   
+                document.getElementById("disp").innerHTML   
+                    = document.getElementById("a").value   
+                    + "this was not the right answer";   
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
@@ -70,7 +71,7 @@
             }  
             else {   
                 document.getElementById("error").innerHTML   
-                    = "You have not selected any season";   
+                    = "You have not selected any answers";   
             }   
         }
 

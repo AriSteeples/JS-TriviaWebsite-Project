@@ -18,28 +18,28 @@
         <h id="error">Welcome to the Question page</h>
         
             
-        <p> Assassins Creed. What game in the series took place in Egypt?</p>
+        <p> What AAA game are you able play on your amazon Alexa? </p>
         <br>
         </div>
         <div class="form-check">
 
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="a"> Assassins Creed Black Flag
+                <input type="radio" class="text-center" name="optradio" id="a"> Mass Effect 3 
             <br>
             <br>
             <br>
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="b"> Assassins Creed Odyssey
+                <input type="radio" class="text-center" name="optradio" id="b"> Fallout 4
             <br>
             <br>
             <br>
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="c"> Assassins Creed Origins
+                <input type="radio" class="text-center" name="optradio" id="c"> The Witcher 3 : Wild Hunt
             <br>
             <br>
             <br>
             <label class="form-check-label">
-                <input type="radio" class="text-center" name="optradio" id="c"> Assassins Creed Valhalla
+                <input type="radio" class="text-center" name="optradio" id="d"> Skyrim
             <br>
             <br>
             <br>
@@ -54,27 +54,23 @@
         function checkButton() {    
             if(document.getElementById('a').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("a").value   
-                    + "this was not the right answer";   
+                    =  "this was not the right answer";   
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("b").value   
-                    + "this was not the right answer";     
+                    =  "this was not the right answer";     
             }   
             else if(document.getElementById('c').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("c").value   
-                    + "this was the right answer";     
+                    = "this was the right answer";     
             }   
             else if(document.getElementById('d').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("d").value   
-                    + "this was not the right answer";     
+                    = "this was not the right answer";     
             }  
             else {   
                 document.getElementById("error").innerHTML   
-                    = "You have not selected any season";   
+                    = "You have not selected any answers";   
             }   
         }
 
