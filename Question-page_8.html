@@ -45,17 +45,15 @@
         function checkButton() {    
             if(document.getElementById('a').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("a").value   
-                    + "this was not the right answer";   
+                    = "this was the right answer";   
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = document.getElementById("b").value   
-                    + "this was not the right answer";     
+                    = "this was not the right answer";     
             }   
             else {   
                 document.getElementById("error").innerHTML   
-                    = "You have not selected any season";   
+                    = "You have not selected any answers";   
             }   
         }
 
