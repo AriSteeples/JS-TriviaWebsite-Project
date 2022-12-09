@@ -44,7 +44,7 @@
             <br>
             <br>
             <input type="submit" onclick="checkButton()" id="submit" value="submit">
-            <input type="button" onclick="window.location.href='JS-Trivia.html'" id="home" value="home">
+            <input type="button" onclick="window.location.href='JS-Trivia.html'" id="home" value="home" disabled>
         </div>
 
         <h3 id="disp"></h3>
@@ -54,19 +54,36 @@
         function checkButton() {    
             if(document.getElementById('a').checked) {   
                 document.getElementById("disp").innerHTML   
-                    =  "this was the right answer";   
+                    =  "this was the right answer";
+                    var score = localStorage.getItem('score');
+                    score++
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', score);   
+                    document.getElementById('submit').disabled = true;
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";     
+                    = "this was not the right answer";
+                    var score = localStorage.getItem('score');
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', score);
+                    document.getElementById('submit').disabled = true;     
             }   
             else if(document.getElementById('c').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";     
+                    = "this was not the right answer";
+                    var score = localStorage.getItem('score');
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', score);
+                    document.getElementById('submit').disabled = true;     
             }   
             else if(document.getElementById('d').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";     
+                    = "this was not the right answer";
+                    var score = localStorage.getItem('score');
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', score);
+                    document.getElementById('submit').disabled = true;
             }  
             else {   
                 document.getElementById("error").innerHTML   

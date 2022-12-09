@@ -44,30 +44,44 @@
             <br>
             <br>
             <input type="submit" onclick="checkButton()" id="submit" value="submit">
-            <input type="button" onclick="window.location.href='JS-Trivia.html'" id="home" value="home">
+            <input type="button" onclick="window.location.href='JS-Trivia.html'" id="home" value="home" disabled>
         </div>
 
         <h3 id="disp"></h3>
   
       </body>
       <script scr="JS-Trivia-QuestionPage.js">
+        var i = 0;
         function checkButton() {    
             if(document.getElementById('a').checked) {   
                 document.getElementById("disp").innerHTML   
                     = document.getElementById("a").value   
-                    + "this was not the right answer";   
+                    + "answer has been submitted";   
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', i);
+                    document.getElementById('submit').disabled = true;
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";     
+                    = "answer has been submitted";
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', i);
+                    document.getElementById('submit').disabled = true;     
             }   
             else if(document.getElementById('c').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was the right answer";     
+                    = "answer has been submitted";
+                    document.getElementById('home').disabled = false;
+                    i++
+                    localStorage.setItem('score', i);
+                    document.getElementById('submit').disabled = true;
             }   
             else if(document.getElementById('d').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";     
+                    = "answer has been submitted";    
+                    document.getElementById('home').disabled = false;
+                    localStorage.setItem('score', i);
+                    document.getElementById('submit').disabled = true; 
             }  
             else {   
                 document.getElementById("error").innerHTML   

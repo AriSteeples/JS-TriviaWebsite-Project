@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="cad-en">
+
+    <head>
+      <link rel="stylesheet" href="JS-Trivia.css">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+      <title>Angelo and Ben's Video Game Trivia</title>  
+    </head>
+
+    <body>
+
+        <div class="jumbotron text-center">
+        <h id="error">Welcome to the final score page</h>
+        
+            
+        <p> score below </p>
+        <p id="score">
+            <script>
+                function showScore () {
+                    document.write('score = ' + localStorage.getItem('score'));
+                };
+                showScore();
+            </script>
+        </p>
+        <p id="resetScore">
+            
+        </p>
+        <input type="button" value="reset" id="reset" onclick="resetscore()">
+        <br>
+        <input type="button" onclick="window.location.href='JS-Trivia.html'" id="home" value="home">
+        <br>
+        </div>
+        
+
+        <h3 id="disp"></h3>
+  
+      </body>
+      <script scr="JS-Trivia-QuestionPage.js">
+        function resetscore () {
+            localStorage.clear();
+            document.getElementById('score').style.visibility = 'hidden';
+            document.getElementById('resetScore').innerText = 'Score has been reset :) Play again';
+            document.getElementById('reset').disabled = true;
+        };
+
+      </script>
