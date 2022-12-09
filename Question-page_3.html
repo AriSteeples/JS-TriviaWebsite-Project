@@ -52,7 +52,7 @@
         function checkButton() {    
             if(document.getElementById('a').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was the right answer";
+                    = "answer has been submitted";
                     var score = localStorage.getItem('score');
                     score++
                     document.getElementById('home').disabled = false;
@@ -62,7 +62,7 @@
             }   
             else if(document.getElementById('b').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";
+                    = "answer has been submitted";
                     var score = localStorage.getItem('score');
                     document.getElementById('home').disabled = false;
                     localStorage.setItem('score', score);
@@ -70,7 +70,7 @@
             }   
             else if(document.getElementById('c').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";
+                    = "answer has been submitted";
                     var score = localStorage.getItem('score');
                     document.getElementById('home').disabled = false;
                     localStorage.setItem('score', score);
@@ -78,7 +78,7 @@
             }   
             else if(document.getElementById('d').checked) {   
                 document.getElementById("disp").innerHTML   
-                    = "this was not the right answer";
+                    = "answer has been submitted";
                     var score = localStorage.getItem('score');
                     document.getElementById('home').disabled = false;
                     localStorage.setItem('score', score);
