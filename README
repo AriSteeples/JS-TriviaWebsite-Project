@@ -1,0 +1,2 @@
+You Start on the JS-Trivia.html file, start on the top row from left to right click on the picture that represent the question. Choose answer, submit, then return home and continue to the next question 
+follow from the bottom row left to right. At the end there is a reset to reset the score, and home to go back to the starting page :) Enjoy. If there is any issues please check local.storage in the (f12) should keep count of correct answers.
